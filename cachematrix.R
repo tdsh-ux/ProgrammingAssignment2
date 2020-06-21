@@ -2,7 +2,7 @@ makeCacheMatrix <- function(x = matrix()) {   #Create a list of special function
 	i <- NULL   #Define the value of i.
 	set <- function(y){   
 		x <<- y   #Put y in the parent environment.
-		i <<- NULL  #
+		i <<- NULL         #Set the value of i to NULL.
 	}
 	get <- function() x   #Get eht value of x (i.e., the matrix)
 	setinverse <- function(inverse) i <<- inverse   #Set the value of the inverse in the parent environment.
